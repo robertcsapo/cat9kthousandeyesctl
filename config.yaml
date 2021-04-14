@@ -1,0 +1,21 @@
+# Netconf Settings
+username: admin
+password: password
+port: 830
+timeout: 600
+
+# Thousand Eyes Agent Settings
+download_url: https://downloads.thousandeyes.com/enterprise-agent/thousandeyes-enterprise-agent-3.0.cat9k.tar
+appid: thousandeyes_enterprise_agent
+vlan: 1
+token: thousand_eyes_token
+
+# Devices to manage
+hosts:
+  192.168.1.1:
+  192.168.1.2:
+    vlan: 100 # Override global vlan
+  10.0.0.1:
+    vlan: 200
+  10.0.0.2:
+    vlan: 200
