@@ -52,6 +52,12 @@ Collecting status of Thousand Eyes Agents
 
 ### Config
 Download [config.yaml](./config.yaml) sample config
+* Edit settings in ```config.yaml```
+  * Username
+  * Password
+  * VLAN
+  * ThousandEyes Token
+  * Hosts (Catalyst 9300/9400 devices)
 
 ### Deploy
 ```cat9kthousandeyesctl deploy --config config.yaml```
