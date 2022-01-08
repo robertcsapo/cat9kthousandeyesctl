@@ -1,6 +1,10 @@
 # cat9kthousandeyesctl
 
-Deploy Cisco Thousand Eyes agent on Cisco Catalyst 9000
+Cisco ThousandEyes is a digital experience monitoring platform to see, understand, and improve digital experiences over any network. ThousandEyes offers global vantage points from which users can run a variety of tests to gain more insights and to monitor the performance of their business-critical applications or the network itself.
+- [ThousandEyes Enterprise Agent Deployment Guide on Catalyst 9300 and 9400 Switching Platforms](https://www.cisco.com/c/en/us/products/collateral/switches/catalyst-9400-series-switches/guide-c07-2431113.html)
+- [Installing Enterprise Agents on Cisco Catalyst 9000 Series Switches](https://docs.thousandeyes.com/product-documentation/global-vantage-points/enterprise-agents/installing/cisco-devices/installing-enterprise-agents-on-cisco-catalyst-9000-series-switches)
+
+Deploy Cisco ThousandEyes agent on Cisco Catalyst 9000 with ```cat9kthousandeyesctl```
 
 ```
 cat9kthousandeyesctl deploy -c config.yaml  
@@ -32,7 +36,7 @@ Collecting status of Thousand Eyes Agents
     - Internet
     - DNS
     - DHCP
-- Cisco Thousand Eyes Account
+- Cisco ThousandEyes Account ([Free trial](https://www.thousandeyes.com/signup/))
     - Token
 - Cisco Catalyst 9000
     - C9300
@@ -85,7 +89,7 @@ Include a succinct summary of the features/capabilities of your project.
 **Cisco Products & Services:**
 
 - Cisco Catalyst 9000
-- Cisco Thousand Eyes
+- Cisco ThousandEyes
 
 **Tools & Frameworks:**
 
@@ -100,7 +104,7 @@ Include a succinct summary of the features/capabilities of your project.
 ```
 Usage: cat9kthousandeyesctl [OPTIONS] COMMAND [ARGS]...
 
-  Manage Thousand Eyes Agent on Catalyst 9000
+  Manage ThousandEyes Agent on Catalyst 9000
 
 Options:
   --version  Show the version and exit.
@@ -108,10 +112,10 @@ Options:
   --help     Show this message and exit.
 
 Commands:
-  deploy       Deploy Thousand Eyes Agent
+  deploy       Deploy ThousandEyes Agent
   interactive  Interactive TTY mode
   status       Status of Application Hosting on the devices
-  undeploy     Remove Thousand Eyes Agent
+  undeploy     Remove ThousandEyes Agent
 ```
 
 ## Config
@@ -127,7 +131,7 @@ timeout: 600
 download_url: https://downloads.thousandeyes.com/enterprise-agent/thousandeyes-enterprise-agent-3.0.cat9k.tar
 appid: thousandeyes_enterprise_agent
 vlan: 1
-token: thousand_eyes_token
+token: thousandeyes_token
 
 # Devices to manage
 hosts:
